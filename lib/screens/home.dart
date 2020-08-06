@@ -7,13 +7,30 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Container(
           height: 40.0,
-          child: Center(
-            child: Image.asset("images/youtubeLogo.png"),
-          ),           
+          child: Image.asset("images/youtubeLogo.png"),        
         ),
         elevation:  0,
         backgroundColor: Colors.blueGrey[200],
+        actions: <Widget>[
+          Align(
+            alignment: Alignment.center,
+            child: Text('0'),
+          ),
+          IconButton(
+            icon: Icon(Icons.star), 
+            onPressed: () {
+
+            }
+          ),
+          IconButton(
+            icon: Icon(Icons.search), 
+            onPressed: () {
+
+            }
+          ),
+        ],
       ),
+      body: Container(),
     );
   }
 }
